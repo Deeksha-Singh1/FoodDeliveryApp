@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose= require('mongoose');
 const app = express()
 const port = 5000
-const mongoURI = 'mongodb+srv://deeksha1511:Deeksha1511@cluster0.ei3093u.mongodb.net/';
+const mongoURI = 'mongodb+srv://deeksha1511:Deeksha1511@cluster0.ei3093u.mongodb.net/BiteBuddy';
 
 const mongoDb = mongoose.connect(mongoURI,{
   useNewUrlParser: true,
@@ -12,6 +12,7 @@ const mongoDb = mongoose.connect(mongoURI,{
 }).catch((err)=>{
   console.log(err);
 });
+
 
 
 app.get('/', (req,res)=>{
